@@ -3,7 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - SwapStyle AI</title>
+    <title>Support & FAQ - SwapStyle AI: Song Cover Maker for iOS</title>
+    <meta name="description" content="Get help with SwapStyle AI. Learn how to generate AI music covers, swap song genres on iPhone, manage your iOS subscription, and fix generation errors.">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How does SwapStyle AI work on iPhone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SwapStyle AI is an iOS app that uses advanced artificial intelligence to analyze the melody and structure of your uploaded audio file. It then re-imagines the track by applying the characteristics of your selected genre, creating a completely new AI music cover directly on your iPhone."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Is SwapStyle AI free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, SwapStyle AI offers a free version for iOS users to generate short audio previews. To unlock full-length AI song generation, high-fidelity audio downloads, and access to all premium genres, users can upgrade to the Premium plan via in-app purchase."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do I cancel my SwapStyle AI subscription?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because SwapStyle AI is an exclusive iOS application, all subscriptions are managed securely by Apple. To cancel: 1. Open the Settings app on your iPhone. 2. Tap your name at the top. 3. Tap 'Subscriptions'. 4. Select 'SwapStyle AI' and tap 'Cancel Subscription'."
+        }
+      }]
+    }
+    </script>
+
     <style>
         :root {
             --primary-color: #6a11cb;
@@ -42,13 +73,27 @@
             z-index: 100;
         }
 
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .nav-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
         .logo {
             font-size: 1.5rem;
             font-weight: 800;
             background: var(--gradient-bg);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-decoration: none;
         }
 
         .nav-link {
@@ -72,6 +117,14 @@
             text-align: center;
             margin-bottom: 60px;
         }
+        
+        .support-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(106, 17, 203, 0.4);
+        }
 
         h1 {
             font-size: 2.5rem;
@@ -84,9 +137,7 @@
         }
 
         /* FAQ Section */
-        .faq-section {
-            margin-bottom: 60px;
-        }
+        .faq-section { margin-bottom: 60px; }
 
         .faq-item {
             background-color: var(--card-bg);
@@ -97,9 +148,7 @@
             transition: border-color 0.3s;
         }
 
-        .faq-item:hover {
-            border-color: rgba(255,255,255,0.15);
-        }
+        .faq-item:hover { border-color: rgba(255,255,255,0.15); }
 
         .faq-question {
             padding: 20px;
@@ -119,9 +168,7 @@
             transition: transform 0.3s;
         }
 
-        .faq-item.active .faq-question::after {
-            transform: rotate(45deg);
-        }
+        .faq-item.active .faq-question::after { transform: rotate(45deg); }
 
         .faq-answer {
             max-height: 0;
@@ -130,12 +177,16 @@
             background-color: rgba(0,0,0,0.2);
         }
 
-        .faq-answer p {
+        .faq-answer p, .faq-answer ol, .faq-answer ul {
             padding: 20px;
             color: var(--text-gray);
             font-size: 0.95rem;
             border-top: 1px solid rgba(255,255,255,0.05);
         }
+        
+        .faq-answer ol { padding-left: 40px; padding-bottom: 20px; }
+        .faq-answer li { margin-bottom: 8px; }
+        .faq-answer strong { color: var(--text-light); }
 
         /* Contact Box */
         .contact-box {
@@ -146,9 +197,7 @@
             text-align: center;
         }
 
-        .contact-box h2 {
-            margin-bottom: 15px;
-        }
+        .contact-box h2 { margin-bottom: 15px; }
 
         .contact-box p {
             color: var(--text-gray);
@@ -166,9 +215,7 @@
             transition: transform 0.2s;
         }
 
-        .btn-contact:hover {
-            transform: translateY(-2px);
-        }
+        .btn-contact:hover { transform: translateY(-2px); }
 
         /* Footer */
         footer {
@@ -188,57 +235,68 @@
 <body>
 
     <header>
-        <a href="./" class="logo">SwapStyle AI</a>
-        <a href="./" class="nav-link">Back to Home</a>
+        <a href="index.html" class="logo-container">
+            <img src="adaptive-icon.png" alt="SwapStyle AI Icon" class="nav-icon">
+            <span class="logo">SwapStyle AI</span>
+        </a>
+        <a href="index.html" class="nav-link">Back to Home</a>
     </header>
 
     <div class="container">
         <div class="page-header">
-            <h1>How can we help?</h1>
-            <p class="subtitle">Find answers to common questions or get in touch with our team.</p>
+            <img src="adaptive-icon.png" alt="SwapStyle AI Support" class="support-icon">
+            <h1>SwapStyle AI Support</h1>
+            <p class="subtitle">Find answers to common questions about generating AI music covers on your iPhone.</p>
         </div>
 
         <div class="faq-section">
+            
             <div class="faq-item">
-                <div class="faq-question">How does SwapStyle AI work?</div>
+                <div class="faq-question">How does SwapStyle AI work on iPhone?</div>
                 <div class="faq-answer">
-                    <p>SwapStyle AI uses advanced artificial intelligence to analyze the melody and structure of your uploaded song. It then "re-imagines" the track by applying the characteristics of the genre you selected, creating a completely new version where you can choose to keep the original melody or generate a new one.</p>
+                    <p><strong>SwapStyle AI: Song Cover Maker</strong> uses advanced artificial intelligence to analyze the melody and structure of your uploaded audio file. It then re-imagines the track by applying the characteristics of your selected genre, creating a completely new AI music cover directly on your iOS device. You can choose to keep the original melody or let the AI generate a new one.</p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Is the app free to use?</div>
+                <div class="faq-question">Is SwapStyle AI free to use?</div>
                 <div class="faq-answer">
-                    <p>SwapStyle AI offers a free version that allows you to generate short previews. To unlock full-length song generation, higher quality audio downloads, and all premium genres, you can subscribe to our Premium plan.</p>
+                    <p>Yes, SwapStyle AI offers a free version for iOS users to generate short audio previews. To unlock full-length AI song generation, high-fidelity audio downloads, and access to all premium genres, users can upgrade to the Premium plan via in-app purchase on the App Store.</p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">How do I cancel my subscription?</div>
+                <div class="faq-question">How do I cancel my SwapStyle AI subscription?</div>
                 <div class="faq-answer">
-                    <p>Subscriptions are managed directly through your device's app store settings. <br><br>
-                    <strong>iOS:</strong> Go to Settings > Your Name > Subscriptions > SwapStyle AI.<br>
+                    <p>Because SwapStyle AI is an exclusive iOS application, all subscriptions are managed securely by Apple. To cancel your subscription:</p>
+                    <ol>
+                        <li>Open the <strong>Settings</strong> app on your iPhone or iPad.</li>
+                        <li>Tap your Apple ID (Your Name) at the top of the screen.</li>
+                        <li>Tap <strong>Subscriptions</strong>.</li>
+                        <li>Select <strong>SwapStyle AI</strong> from your active list.</li>
+                        <li>Tap <strong>Cancel Subscription</strong>.</li>
+                    </ol>
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What file formats are supported?</div>
+                <div class="faq-question">What audio file formats does SwapStyle AI support?</div>
                 <div class="faq-answer">
-                    <p>We currently support MP3, WAV, M4A, and FLAC formats for uploading. Your swapped songs can be downloaded as high-quality MP3 or WAV files.</p>
+                    <p>We currently support uploading MP3, WAV, M4A, and FLAC formats from your iPhone's files. Once the AI has swapped your song's genre, you can download the final cover as a high-quality MP3 or WAV file.</p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">My generation failed, what should I do?</div>
+                <div class="faq-question">Why did my AI song generation fail or timeout?</div>
                 <div class="faq-answer">
-                    <p>Rarely, complex audio files might cause the AI to timeout. Please try uploading the file again or try a different section of the song. If the problem persists, check your internet connection or contact our support team.</p>
+                    <p>Rarely, highly complex audio files might cause the AI processing engine to timeout. To fix this, please ensure your iPhone has a stable internet connection and try uploading the file again. If the problem persists, try trimming the audio or selecting a different section of the song. For ongoing issues, contact our support team below.</p>
                 </div>
             </div>
         </div>
 
         <div class="contact-box">
-            <h2>Still need help?</h2>
-            <p>Our support team is just an email away. We typically reply within 24 hours.</p>
+            <h2>Still need help with SwapStyle AI?</h2>
+            <p>Our developer support team is just an email away. We typically reply to all iOS user inquiries within 24 hours.</p>
             <a href="mailto:info@noctastudio.co" class="btn-contact">Contact Support</a>
         </div>
     </div>
@@ -246,7 +304,7 @@
     <footer>
         <a href="privacy.html">Privacy Policy</a>
         <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Service</a>
-        <p style="margin-top: 15px;">&copy; <script>document.write(new Date().getFullYear())</script> SwapStyle AI. All rights reserved.</p>
+        <p style="margin-top: 15px;">&copy; <script>document.write(new Date().getFullYear())</script> SwapStyle AI: Song Cover Maker. All rights reserved.</p>
     </footer>
 
     <script>
@@ -256,7 +314,7 @@
         faqItems.forEach(item => {
             const question = item.querySelector('.faq-question');
             question.addEventListener('click', () => {
-                // Close other items (optional - remove this block if you want multiple open)
+                // Close other items
                 faqItems.forEach(otherItem => {
                     if (otherItem !== item) {
                         otherItem.classList.remove('active');
