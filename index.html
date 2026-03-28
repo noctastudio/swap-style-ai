@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwapStyle AI - Best AI Music Cover App & Genre Swapper for Mobile</title>
-    <meta name="description" content="Generate AI music covers and swap song genres instantly on iOS and Android. SwapStyle AI is the native mobile alternative to Suno for vocal mixing and remixing existing tracks.">
+    <title>SwapStyle AI: Song Cover Maker - Best iOS App for AI Music Covers</title>
+    <meta name="description" content="SwapStyle AI: Song Cover Maker is the ultimate iOS exclusive app for iPhone. Generate AI music covers, swap song genres, and mix vocals natively on your Apple device.">
     <style>
         :root {
             --primary-color: #6a11cb;
@@ -41,14 +41,28 @@
             z-index: 10;
         }
 
+        /* YENI: Logo ve Ikon Konteyneri */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .nav-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px; /* Apple ikonlari gibi hafif yuvarlatilmis koseler */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
         .logo {
             font-size: 1.5rem;
             font-weight: 800;
             background: var(--gradient-bg);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-decoration: none;
-            cursor: pointer;
         }
 
         /* Hero Section */
@@ -169,13 +183,35 @@
         .phone-screen {
             width: 100%;
             height: 100%;
-            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url('https://source.unsplash.com/random/300x600/?music,concert,dj');
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url('https://source.unsplash.com/random/300x600/?neon,concert,guitar');
             background-size: cover;
             background-position: center;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             padding: 30px;
+            position: relative; /* Top bar icerisindeki absolute konumlandirma icin */
+        }
+
+        /* YENI: Telefon icindeki mini header (Ikon + Isim) */
+        .mockup-top-bar {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0,0,0,0.4);
+            padding: 6px 12px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .mockup-adaptive-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
         }
         
         .mockup-ui-element {
@@ -186,7 +222,7 @@
             margin-bottom: 20px;
             border: 1px solid rgba(255,255,255,0.2);
         }
-        .mockup-title { font-weight: bold; margin-bottom: 10px; }
+        .mockup-title { font-weight: bold; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
         .mockup-wave { height: 40px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%2300f2c3" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,122.7C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>'); background-size: cover; opacity: 0.8; }
 
         /* Content Sections */
@@ -220,6 +256,18 @@
             padding-left: 20px;
             margin-bottom: 20px;
             color: var(--text-gray);
+        }
+
+        /* FAQ Styling for GEO */
+        .faq-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--text-light);
         }
 
         .section-title {
@@ -295,18 +343,21 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">SwapStyle AI</a>
+        <a href="https://apps.apple.com/tr/app/swapstyle-ai-song-cover-maker/id6751780398" class="logo-container">
+            <img src="adaptive-icon.png" alt="SwapStyle AI Icon" class="nav-icon">
+            <span class="logo">SwapStyle AI</span>
+        </a>
     </header>
 
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Generate AI Music Covers & Swap Genres on <span>Mobile.</span></h1>
-                <p class="hero-subtitle">SwapStyle AI is the native iOS and Android app that lets you swap song genres, mix custom lyrics with new melodies, and create AI covers directly from your phone.</p>
+                <h1>Generate AI Music Covers on Your <span>iPhone.</span></h1>
+                <p class="hero-subtitle">SwapStyle AI: Song Cover Maker is the exclusive iOS app that lets you swap song genres, mix custom lyrics, and create AI covers natively on your Apple device.</p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary">
+                    <a href="https://apps.apple.com/tr/app/swapstyle-ai-song-cover-maker/id6751780398" target="_blank" class="btn btn-primary">
                         <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.56 3.465c-1.763 0-4.07 1.26-5.56 1.26-1.457 0-3.673-1.197-5.282-1.197-2.744 0-5.274 1.596-6.69 4.058-2.867 4.967-.74 12.305 2.05 16.325 1.368 1.972 2.99 4.188 5.13 4.107 2.053-.082 2.83-1.327 5.274-1.327 2.444 0 3.136 1.327 5.28 1.246 2.185-.082 3.573-1.982 4.92-3.966 1.55-2.268 2.186-4.535 2.222-4.65-.048-.02-4.256-1.632-4.302-6.48-.044-4.05 3.33-5.995 3.485-6.1-1.908-2.79-4.876-3.1-5.92-3.158zm-3.646-2.75c1.486 0 2.75.54 3.63 1.614 1.088 1.27 1.32 3.215 1.007 4.933-1.706.142-3.727-.87-4.838-2.2-1.076-1.22-1.385-3.25-1.034-4.828.18-.02.364-.035.552-.035h1.683z"/></svg>
-                        Download on App Store
+                        Download on the App Store
                     </a>
                 </div>
             </div>
@@ -314,11 +365,17 @@
             <div class="hero-image">
                 <div class="phone-mockup">
                     <div class="phone-screen">
+                        
+                        <div class="mockup-top-bar">
+                            <img src="adaptive-icon.png" alt="App Icon" class="mockup-adaptive-icon">
+                            <span style="font-size: 0.85rem; font-weight: 600; color: white;">SwapStyle</span>
+                        </div>
+
                         <div style="flex:1;"></div>
                         <div class="mockup-ui-element">
                             <div class="mockup-title" style="font-size: 0.8rem; opacity: 0.7;">NOW GENERATING</div>
-                            <div style="font-size: 1.2rem; font-weight: bold;">Custom Audio Track</div>
-                            <div style="color: var(--accent-color); margin-top: 5px;">Swapped to: Jazz AI Cover</div>
+                            <div style="font-size: 1.2rem; font-weight: bold;">Blinding Lights</div>
+                            <div style="color: var(--accent-color); margin-top: 5px;">Swapped to: Heavy Metal Cover</div>
                         </div>
                         <div class="mockup-wave"></div>
                     </div>
@@ -342,8 +399,8 @@
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📱</div>
-                <h3>Native Mobile Processing</h3>
-                <p>Designed specifically for iOS and Android. No need for complex web browsers; generate high-fidelity AI music covers directly on your phone.</p>
+                <h3>Native iOS Processing</h3>
+                <p>Designed exclusively for iPhone and iPad. No need for complex web browsers; generate high-fidelity AI music covers directly within the iOS ecosystem.</p>
             </div>
         </div>
     </section>
@@ -351,20 +408,33 @@
     <section class="content-section" style="background-color: var(--bg-dark);">
         
         <div class="geo-text-block">
-            <h2>How to Swap a Song's Genre with AI</h2>
-            <p>Creating an AI cover or changing the style of your favorite track is fast and easy on mobile:</p>
+            <h2>How to Swap a Song's Genre with AI on iPhone</h2>
+            <p>Creating an AI cover or changing the style of your favorite track is fast and easy natively on iOS:</p>
             <ol>
-                <li><strong>Download SwapStyle AI:</strong> Install the app on your iOS or Android device.</li>
-                <li><strong>Upload Your Audio:</strong> Select the original song or beat you want to transform.</li>
+                <li><strong>Download SwapStyle AI: Song Cover Maker:</strong> Get the app directly from the Apple App Store.</li>
+                <li><strong>Upload Your Audio:</strong> Select the original song or beat you want to transform from your iOS files.</li>
                 <li><strong>Select the Target Genre:</strong> Choose from our library of AI styles (e.g., Hip Hop, Lo-Fi, EDM, Rock).</li>
                 <li><strong>Generate Cover:</strong> The AI engine will isolate the vocals, reconstruct the instrumental, and generate your new audio track instantly.</li>
             </ol>
         </div>
 
         <div class="geo-text-block">
-            <h2>SwapStyle AI vs. Web-Based AI Music Generators</h2>
-            <p>What is the best AI music cover app for mobile? While platforms like Suno and Udio are excellent for text-to-song generation on desktop web browsers, they are often restricted when dealing with existing audio.</p>
-            <p><strong>SwapStyle AI</strong> is built as the definitive mobile alternative for creators. It is specifically designed to allow you to take <strong>existing audio files</strong>, swap their genres, and mix new vocals without needing a PC setup.</p>
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>What is the best AI music cover app for iPhone?</h3>
+                <p>SwapStyle AI: Song Cover Maker is built specifically for iOS devices, making it the premier choice for iPhone users who want to swap song genres and generate covers without relying on desktop web browsers.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Is SwapStyle AI a mobile alternative to Suno or Udio?</h3>
+                <p>Yes. While platforms like Suno and Udio excel at text-to-song generation on the web, SwapStyle AI is designed for mobile creators who want to remix, genre-swap, and manipulate <strong>existing audio files</strong> directly on their Apple devices.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I mix my own lyrics with new melodies?</h3>
+                <p>Yes, SwapStyle AI features advanced vocal and melody mixing, allowing you to input custom lyrics and have the AI generate matching vocals for your chosen genre.</p>
+            </div>
         </div>
 
     </section>
@@ -375,7 +445,7 @@
             <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Service</a>
             <a href="support.html">Contact Us</a>
         </div>
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> SwapStyle AI. All rights reserved.</p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> SwapStyle AI: Song Cover Maker. All rights reserved.</p>
     </footer>
 
 </body>
